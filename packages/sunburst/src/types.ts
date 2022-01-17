@@ -18,6 +18,7 @@ export interface SunburstCustomLayerProps<RawDatum> {
     centerX: number
     centerY: number
     radius: number
+    innerRadius: number
     arcGenerator: ArcGenerator
 }
 
@@ -63,6 +64,7 @@ export type SunburstCommonProps<RawDatum> = {
     height: number
     margin?: Box
     cornerRadius: number
+    innerRadius: number
     theme: Theme
     colors: OrdinalColorScaleConfig<Omit<ComputedDatum<RawDatum>, 'color' | 'fill'>>
     colorBy: 'id' | 'depth'

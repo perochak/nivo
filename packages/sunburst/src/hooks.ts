@@ -21,6 +21,7 @@ export const useSunburst = <RawDatum>({
     valueFormat,
     radius,
     cornerRadius = defaultProps.cornerRadius,
+    innerRadius = defaultProps.innerRadius,
     colors = defaultProps.colors,
     colorBy = defaultProps.colorBy,
     inheritColorFromParent = defaultProps.inheritColorFromParent,
@@ -32,6 +33,7 @@ export const useSunburst = <RawDatum>({
     valueFormat?: DataProps<RawDatum>['valueFormat']
     radius: number
     cornerRadius?: SunburstCommonProps<RawDatum>['cornerRadius']
+    innerRadius?: SunburstCommonProps<RawDatum>['innerRadius']
     colors?: SunburstCommonProps<RawDatum>['colors']
     colorBy?: SunburstCommonProps<RawDatum>['colorBy']
     inheritColorFromParent?: SunburstCommonProps<RawDatum>['inheritColorFromParent']
